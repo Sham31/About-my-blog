@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+{% block body %}
+        <!-- Page Header-->
+        
+        <header class="masthead" style="background-image: url('{{ url_for('static' , filename = 'assets/img/tungnath.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1 >{{post.title}}</h1>
+                            <h2 class="subheading">{{post.tagline}}</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="{{params['ig_url']}}">Sham</a>
+                                on {{post.date}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                       {{post.content}}
+<h1 class="section-heading">How to reach Tungnath? A quick guide</h1>
+
+<img class="img-fluid" src="{{ url_for('static' , filename = 'assets/img/tungnath.jpg')}}" alt="Demo Image">
+<hr class="my-4" />
+<h2 class="section-heading">Must watch video</h2>
+<video width="320" height="240" controls>
+    <source src="{{ url_for('static', filename='assets/img/kv0.mp4')}}" type="video/mp4">
+  </video>
+  
+
+  
+<h2 class="section-heading">If you don't read about our Kedarnath Track go and read now by clicking the lik below:</h2>
+<a href="/post/1"> Click here to know about our Kedarnath Blog</a>
+
+
+
+<h1 class="section-heading">Follow these steps to reach Tungnath:</h1>
+<ul>
+    <li>After completing Kedarnath track you will return back to Sonprayag .</li>
+    <li>At Sonprayag you can book taxi to reach Tungnath/Chopta(Fare: 4000-6000Rs).</li>
+    <li>After reach Tungnath you can start your track which is 6km. </li>
+    <li>You can reach Tungnath via Ghoda/Khachchar(Charges: 1500-2500Rs).</li>
+    <li> When you reach Tungnath you can also go to track for Chandrashila which is 2km from Tungnath Temple.</li>
+    <li>You will see The Himalayan Peak from Chandrashila.</li>
+    <li>In tracking you will see natural waterfall,mountains,forests and many more intresting things.</li>
+    
+
+
+</ul>
+<h1 class="section-heading">Here are some Images and Videos of our Tungnath Track:</h1>
+
+<div class="d-flex justify-content-between">
+    <img src="{{ url_for('static', filename='assets/img/t1.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+    <img src="{{ url_for('static', filename='assets/img/t2.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+  </div>
+  <div class="d-flex justify-content-between">
+  
+    <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/tv1.mp4')}}" type="video/mp4">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/tv2.mp4')}}" type="video/mp4">
+      </video>
+    </div>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/t3.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/t4.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      <div class="d-flex justify-content-between">
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/tv3.mp4')}}" type="video/mp4">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/tv4.mp4')}}" type="video/mp4">
+      </video>
+    </div>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/t5.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/t6.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/k8.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/k9.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      <span class="caption text-muted">Follow me on Instagram and Facebook by clicking below link</span>
+      
+      
+      
+
+  
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endblock %}

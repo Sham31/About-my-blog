@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+{% block body %}
+        <!-- Page Header-->
+        
+        <header class="masthead" style="background-image: url('{{ url_for('static' , filename = 'assets/img/kedarnath.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1 >{{post.title}}</h1>
+                            <h2 class="subheading">{{post.tagline}}</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="{{params['ig_url']}}">Sham</a>
+                                on {{post.date}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                       {{post.content}}
+<h1 class="section-heading">How to reach Keadarnath? A quick guide</h1>
+
+<img class="img-fluid" src="{{ url_for('static' , filename = 'assets/img/kedarnath.jpg')}}" alt="Demo Image">
+<hr class="my-4" />
+<h2 class="section-heading">Must watch video</h2>
+<video width="320" height="240" controls>
+    <source src="{{ url_for('static', filename='assets/img/kv0.mp4')}}" type="video/mp4">
+  </video>
+  
+
+  
+<h2 class="section-heading">By Air:</h2>
+
+<p>Kedarnath does not have an airport of its own which makes Jolly Grant Airport in Dehradun the nearest civil airhead. Located around 250 km from Kedarnath, Jolly Grant Airport is connected to the major cities of India including New Delhi, Mumbai, Kolkata and Chennai. There are plenty of flights operating to and fro from these cities and provide a lot of options in terms of flight timing and fares. Almost all the major airlines have flights to Jolly Grant Airport. Once you are in Dehradun, you can either take a bus or hire a cab to reach Kedarnath.</p>
+
+<h2 class="section-heading">By Road:</h2>
+
+<p>There is no railway station at Kedarnath. Rishikesh Railway Station is the nearest railway head from Kedarnath. Located about 210 km from Gaurikund, Rishikesh Railway Station is well connected to almost all the major cities of India and has a regular trains on a daily basis. From Rishikesh, one can take a bus to Gaurikund.</p>
+
+
+<h2 class="section-heading">By Train:</h2>
+<p>Kedarnath is well connected to New Delhi and Dehradun by bus network. If you land in New Delhi, the best way is to take a bus to reach Dehradun which is about 260 km from the Indian capital. Kashmere Gate Bus Terminal and Anand Vihar Bus Terminal in Delhi are the two major interstate bus depots that run regular bus services to Dehradun. Once in Dehradun, you can take a bus to Kedarnath. There are plenty of options to choose from A/C sleeper, non A/C sleeper, Volvo A/C, Volvo A/C and semi-sleeper buses. You can also take a bus from Haridwar to reach Kedarnath. The distance between Haridwar and Kedarnath is around 125 km and buses take about 5 hours to cover the distance. Gaurikund is the nearest motorable area from Kedarnath.
+        You can also hire a cab from Dehradun if you want to enjoy that lovely stretch at your own will. Taxis ply between Dehradun and Kedarnath and the fare varies depending upon the size/seating capacity of the vehicle.</p>
+<h1 class="section-heading">Follow these steps to reach Kedarnath:</h1>
+<ul>
+    <li>Reach Haridwar or Rishikesh by following above steps(By Air, By Road, By Train).</li>
+    <li>Take bus from Haridwar or Rishikesh to Sonprayag(Fare: 500-1000Rs) Buses are running between 6am-9am.</li>
+    <li>After reach Sonprayag stay there in Dormatry(charges: 150-250Rs per person) or Room(Charges: 1000-2000Rs) And next day get ready for Kedarnath track. </li>
+    <li> Next day take taxi from Sonprayag to Gauri Kund(Fare: 50-100Rs) where the Keadarnath track of 16km begins.</li>
+    <li>Start your tracking at early morning</li>
+    <li>You can reach Kedarnath via Ghoda/Khachchar(Charges: 3000-4000Rs), via Palki(Charges: 3000-5000Rs), via Helicopter(Charges: 3000-4000 one side).</li>
+    <li>In tracking you will see natural waterfall,mountains,forests and many more intresting things.</li>
+    <li>After 16km of track you reach Kedarnath Temple.</li>
+    <li>You can also go to track for Vasuki Tal situated 10km from Kedar valley. Don't forget to hier guider(charge: 200-500Rs).</li>
+    <li>You can also go to track for Bhairavnath Temple situated 2km from Kedarnath Temple.From here you wil see whole kedar valley.</li> 
+
+
+</ul>
+<h1 class="section-heading">Here are some Images and Videos of our Kedarnath Track:</h1>
+
+<div class="d-flex justify-content-between">
+    <img src="{{ url_for('static', filename='assets/img/k1.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+    <img src="{{ url_for('static', filename='assets/img/k2.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+  </div>
+  <div class="d-flex justify-content-between">
+  
+    <video width="320" height="240" controls >
+        <source src="{{ url_for('static', filename='assets/img/kv1.mp4')}}" type="video/mp4">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/kv2.mp4')}}" type="video/mp4">
+      </video>
+    </div>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/k3.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/k4.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      <div class="d-flex justify-content-between">
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/kv3.mp4')}}" type="video/mp4">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/kv-4.mp4')}}" type="video/mp4">
+      </video>
+    </div>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/k6.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/k7.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='assets/img/k8.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+        <img src="{{ url_for('static', filename='assets/img/k9.jpg') }}" class="rounded w-50 img-thumbnail" alt="">
+      </div>
+      <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='assets/img/kv5.mp4')}}" type="video/mp4">
+      </video>
+      <span class="caption text-muted">Follow me on Instagram and Facebook by clicking below link</span>
+      
+      
+      
+
+  
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endblock %}

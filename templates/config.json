@@ -1,0 +1,16 @@
+{
+    "params":
+    {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/codewithsham",
+        "prod_uri": "mysql://root:@localhost/codewithsham",
+        "fb_url": "https://www.facebook.com/profile.php?id=100056883849917",
+        "ig_url": "https://www.instagram.com/___sham___31g/",
+        "gw_url": "https://github.com/Sham31",
+        "gmail-user": "gsaksham379@gmail.com",
+        "gmail-password": "nddcyguylfgpftxk",
+        "no_of_posts": 3,
+        "admin_user": "sham",
+        "admin_pass": "31"
+    }
+}

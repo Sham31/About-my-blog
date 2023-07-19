@@ -1,0 +1,88 @@
+{% extends 'layout.html' %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static' , filename = 'assets/img/about1-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">This is all about me</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+          <div class="container px-4 px-lg-5">
+              <div class="row gx-4 gx-lg-5 justify-content-center">
+                  <div class="col-md-10 col-lg-8 col-xl-7">
+                       <!-- About-->
+       <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">About</h2>
+              <h3 class="section-subheading text-muted">Saksham Gupta(Sham)</h3>
+          </div>
+         <hr class="featurette-divider my-4">
+
+         <div class="row featurette ">
+           <div class="col-md-7">
+          <h2 class="section-heading text-uppercase">My humble begining (31/08/2003) <span class="text-body-secondary"></span></h2>
+             <p class="lead">I was born on 31 August 2003. I am from Jaunpur. I did my 10th and 12th from Jaunpur and then went to Greater Noida for higher education</p>
+           </div>
+           <div class="col-md-5">
+            <img src="{{ url_for('static' , filename = 'assets/img/me.jpg')}}" class="d-block w-400 rounded-circle img-fluid" alt="">
+           </div>
+         </div>
+     
+         <hr class="featurette-divider">
+     
+         <div class="row featurette">
+           <div class="col-md-7 order-md-2">
+              <h2 class="section-heading text-uppercase">Passed class 10th in 2019 <span class="text-body-secondary"></span></h2>
+             <p class="lead">Passed 10th from GRAMODAY INTER COLLEGE (U.P. BOARD) in 2019 with 78%</p>
+           </div>
+           <div class="col-md-5 order-md-1">
+            <img src="{{ url_for('static' , filename = 'assets/img/10.jpg')}}" class="d-block w-400 rounded-circle img-fluid" alt="">
+           </div>
+         </div>
+     
+         <hr class="featurette-divider">
+     
+         <div class="row featurette">
+           <div class="col-md-7">
+            <h2 class="section-heading text-uppercase">Passed class 12th in 2021 <span class="text-body-secondary"></span></h2>
+             <p class="lead">Passed 10+2 from GRAMODAY INTER COLLEGE (U.P. BOARD) in 2021 with 73%</p>
+           </div>
+           <div class="col-md-5">
+            <img src="{{ url_for('static' , filename = 'assets/img/12.jpg')}}" class="d-block w-400 rounded-circle img-fluid" alt="">
+           </div>
+         </div>
+     
+         <hr class="featurette-divider">
+         <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="section-heading text-uppercase">Currently i am pursuing B.Tech in IT department <span class="text-body-secondary"> </span></h2>
+            <p class="lead">Currently I am pursuing B.Tech in IT department from G.L. BAJAJ INSTITUTE OF TECHNOLOGY AND MANAGEMENT. Now I am learning about Artificial Intelligence(AI),Machine Learning(ML),Data Scientist(DS),Web Developement using Python and it's Modules/Libraries. </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+           <img src="{{ url_for('static' , filename = 'assets/img/IMG_9426.jpg')}}" class="d-block w-400 rounded-circle img-fluid" alt="">
+          </div>
+        </div>
+    
+     
+         <!-- /END THE FEATURETTES -->
+     
+       </div><!-- /.container -->
+              </div>
+          </div>
+      </main>
+       
+        {% endblock %}
+
+
+
+
+
+
